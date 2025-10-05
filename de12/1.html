@@ -7,33 +7,44 @@
      <link rel="stylesheet" href="./css/style.css">
     <!-- h1.htmlからある行をコピペしてくればOK -->
 </head>
-<body>
-    <h1>gitに関して</h1>
-    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
-    <div>
-         <!-- ①↓に文字を書いてみよう -->
-           <ol>
+<h1>gitに関して</h1>
+<!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+<div>
+        <!-- ①↓に文字を書いてみよう -->
+         <ol>
             <li>gitとは</li>
-            <br>分散型情報管理システムのこと<br>
-        </ol>
-           
+    分散型バージョン管理システムのことで、ファイルのバージョン管理が簡単にできるツールのこと。<br>
+    <br><li>gitの機能</li>
+    gitには主に3つの機能がある。<br>①ファイルの共有<br>②ファイルの変更点の同期<br>③ファイルのバックアップである。<br>
+    <br><li>バージョン管理システムの種類</li>
+    ①中央集中型バージョン管理システム
+    <br>すべてのバージョンを1つのサーバーに格納する。集団で利用するものであり1人が操作してる間は、<br>ほかの人が触ることはできない。変更点は共有される。<br>
+    ②分散型バージョン管理システム（これがgit）
+    <br>分散型はファイルをサーバーで一元管理するだけではない。各メンバーがバージョン履歴全体をロー<br>カルに保持してオフラインで作業ができる。作業後には結果を確認し、サーバーにアップすることで<br>サーバー上で保存とカタログ化を行うことが出来る。<br>
+    <a href="https://about.gitlab.com/ja-jp/blog/what-is-git/" target="_blank">git参考文献</a><br>
+    <h1>htmlに関して</h1>
+    <br><li>htmlとは</li>
+    ウェブページ作成に使われるシンプルな言語のこと。プログラミング言語ではなく、タグを用いて文<br>書内の要素を定義するマークアップ言語に当たる。<br>
+    <br><li>htmlの要素</li>
+    htmlは開始タグ、コンテンツ、終了タグで構成されている。<br>
+    開始タグはウェブブラウザにページの要素がどこから始まるかを示す。<br>コンテンツはウェブページを<br>開いた時にユーザーが実際に見る情報。画像や動画の埋め込みコードもこれに当たる。<br>終了タグは開始タグの対になるもので要素名の前に/をつける。<br>
+    <br><li>例）番号付き箇条書きをしたいとき</li>
+    ＜ｏｌ＞
+    <br>＜ｌｉ＞おはよう＜／ｌｉ＞
+    <br>＜ｌｉ＞こんにちは＜／ｌｉ＞
+    <br>＜／ｏｌ＞<br>
+    と入力すると
+    <ol>
+    <li>おはよう</li>
+    <li>こんにちは</li></ol>
+    ウェブページ上ではこのように表示される。<br>
+    <a href="https://kinsta.com/jp/blog/what-is-html/" target="_blank">html参考文献</a>
+    </ol>
+              
 
          <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
-          <img src="./images/testimage.png" width="100%"><br>
           
          <!-- ③↓に箇条書きをしてみよう -->
-         <ol>
-            <li>おはようございます</li>
-            <ul>
-                <li>朝の挨拶</li>
-            </ul>
-            <li>こんにちは</li>
-         </ol> 
          <!-- ④↓に外部リンクを作ってみよう -->
-          <a href="./index.html">デザイン演習Ⅰ・Ⅱトップページ</a><br>
-          <a href="../index.html">XBPトップページ</a><br>
-          <a href="https://www.yahoo.co.jp/" target="_blank">Yahoo</a><br>
-          <a href="./files/test.pdf" target="_blank">pdfファイル</a>
-          <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/zyUUVfwV9zc?si=LLOps8rUhdJr4tY7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-</body>
+        
 </html>

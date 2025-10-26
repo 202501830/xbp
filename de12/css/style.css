@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap&subset=japanese');
 /* フォントを指定したいところで */
 
+
 logo img{
     border-radius: 50%;
     width: 150px;
@@ -27,7 +28,7 @@ html, body {
 	color: #393939;
     margin-left: 15px;
     margin-bottom: 40px;
-	background: #efefef;
+	background: #b3b1b1;
 }
 h1{
     text-indent: 0em;
@@ -49,6 +50,6 @@ p{
 span.blackback{
     text-indent: 3em;
     background: #393939;
-    color: #efefef;
+    color: #b3b1b1;
 }
 

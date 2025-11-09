@@ -2,7 +2,7 @@ from openai import OpenAI
 
 #APIを使うkeyを入力します。これは絶対にwebページなどで公開してはいけません。
 import os
-OpenAI.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key="")
 
 
 a=input("今の気分を入力")

@@ -2,9 +2,9 @@ from openai import OpenAI
 
 #APIを使うkeyを入力します。これは絶対にwebページなどで公開してはいけません。
 import os
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key="")
 
-
+#以下の質問から条件を絞っていく
 a=input("今の気分を入力")
 b=input("今なりたい気分")
 c=input("今見たいジャンルを入力")

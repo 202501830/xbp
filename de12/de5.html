@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>kaeの第5回</title>
+    <!-- ⑤スタイルシートの設定をしよう -->
+     <link rel="stylesheet" href="./css/style.css">
+    <!-- h1.htmlからある行をコピペしてくればOK -->
+</head>
+<body>
+    <h1>アプリ制作</h1>
+    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+    <div>いくつかの質問に答えるとその条件にあったアニメを絞っておすすめしてくれるアプリです。   <br>
+        AIに「アニメに詳しい」というロールを書き加えることでより幅広いアニメを進めてくれるようにしました。<br><br>
+
+
+        <strong>ソースコードはこちら↓</strong>
+         <!-- ①↓に文字を書いてみよう -->
+          <code>
+<ol style="list-style:decimal-leading-zero outside;padding-left:36px;margin-left:0;background-color:#EEF;color:#000;">
+<li style="background-color:#EFF;">from openai import OpenAI</li>
+<li style="background-color:#EEF;"></li>
+<li style="background-color:#EFF;">#APIを使うkeyを入力します。これは絶対にwebページなどで公開してはいけません。</li>
+<li style="background-color:#EEF;">import os</li>
+<li style="background-color:#EFF;">client = OpenAI(api_key="")</li>
+<li style="background-color:#EEF;"></li>
+<li style="background-color:#EFF;">#以下の質問から条件を絞っていく</li>
+<li style="background-color:#EEF;">a=input("今の気分を入力")</li>
+<li style="background-color:#EFF;">b=input("今なりたい気分")</li>
+<li style="background-color:#EEF;">c=input("今見たいジャンルを入力")</li>
+<li style="background-color:#EFF;">d=input("最近ハマっていること、ものを入力")</li>
+<li style="background-color:#EEF;">e=input("興味のあること、ものを入力")</li>
+<li style="background-color:#EFF;">f=input("どのくらいの時間で見終えたいか（何分、何クール）入力")</li>
+<li style="background-color:#EEF;">g=input("一番アニメに求めている要素を入力")</li>
+<li style="background-color:#EFF;"></li>
+<li style="background-color:#EEF;"></li>
+<li style="background-color:#EFF;">question = a+b+c+d+e+f+g+"に合うアニメを教えて"</li>
+<li style="background-color:#EEF;"></li>
+<li style="background-color:#EFF;">#ここがAPIです----------------------------</li>
+<li style="background-color:#EEF;">response = client.chat.completions.create(</li>
+<li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;model="gpt-4o-mini",</li>
+<li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;messages=[ {"role": "system", "content": "あなたはアニメに詳しいユーザー嗜好分析AIです。"},</li>
+<li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{"role": "user", "content": question}]</li>
+<li style="background-color:#EEF;">)</li>
+<li style="background-color:#EFF;">#---------------------------------------</li>
+<li style="background-color:#EEF;"></li>
+<li style="background-color:#EFF;">print("AIの答え：", response.choices[0].message.content)</li>
+<li style="background-color:#EEF;"></li>
+<li style="background-color:#EFF;"></li>
+</ol></code> 
+<strong>制作理由</strong><br>
+自分の欲しいものが何か考えた時によく次に見るアニメを何にしようか迷ってしまうため、このシステムは嬉しいなと思ったからです。
+    
+          
+         <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
+          
+         <!-- ③↓に箇条書きをしてみよう -->
+         
+         <!-- ④↓に外部リンクを作ってみよう -->
+    </div>
+</body>
+</html>
